@@ -1,4 +1,9 @@
+#/usr/bin/env python
 
+import csv
+import sys
+import argparse
+from collections import OrderedDict
     
 def nor_redunt(file):
     
@@ -21,23 +26,32 @@ def nor_redunt(file):
             
 	return(sRNA_dic)
 
-import csv
-
+		#Save for sRNA distribution analysis
 def save_dic(dict):
 	w = csv.writer(open("output.csv", "w"))
-	for key, val in sRNA_dic.items():
-		w.writerow([key, val])
-	
+	for key, val in dict.items():
+		w.writerow([key.strip(), val])
 
-import sys
-import argparse
-		
+		#Save for further alignment, can filter the size by len(key.strip() and the reads by the val
+def save_dic1(dict):
+	with open("1_output3.fasta", "w") as f:
+		i=1
+		for key, val in dict.items():
+			if len(key.strip())<18:
+				pass
+			elif len(key.strip())>30:
+				pass
+			else:
+				f.writelines('>'+ str(i)+'_'+str(val)+'\n' + key.strip()+'\n')
+				i+=1
 def main():
 	parser = argparse.ArgumentParser()
 	parser.add_argument('file', help='first read file')
 	args = parser.parse_args()
 
-	return(nor_redunt(args.file))
+	result=nor_redunt(args.file)
+	#save_dic(result)
+	save_dic1(result)
 	
 
 if __name__ == '__main__':

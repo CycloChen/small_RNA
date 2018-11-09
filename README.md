@@ -40,3 +40,7 @@ and UV, Scientific reports), the selection criteria for process small RNA are:
 --trim the adapter
 --filter the sRNA between 18 to 24 Nts
 --filter the sRNA with the reads >= 10 RPM 
+
+Talk to some experts and their suggestions are:
+--take the sRNA between 18 to 30nt
+--take the sRNA with the reads >5 

@@ -5,7 +5,7 @@ import sys
 import argparse
     
 	#Find the length distribution of sRNA in fastq.gz file
-	def counting(file):
+def counting(file):
 	sRNA_count={}
 	with open(file) as f:
 		header=f.readline() 	#read the header line

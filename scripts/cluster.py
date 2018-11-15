@@ -38,7 +38,7 @@ def cluster2(file):
 				a=int(i[3])
 				b=int(i[0].split('_')[1])
 				c=i[2]
-				if c+'_' + str((a+500)//1000) in cluster: #over-lap 500 bp with the first one. If change, over-lapping half of the full length.
+				if c+'_' + str((a+500)//1000) in cluster: #over-lap 500 bp with the fisrt one. If change, over-lapping half of the full length.
 					cluster[c+'_' + str((a+500)//1000)]+=b
 				else:
 					cluster[c+'_' + str((a+500)//1000)]=b

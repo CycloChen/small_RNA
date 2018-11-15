@@ -26,13 +26,13 @@ with stem rust and leaf materials were harvested at o hr and 48 hrs after rust t
 
 Total RNA was isolated by Trizol and quality was checked either by agarose gel or Quebit quantification. The RNA samples were sent to AGRF centre for small deep seqencing.
 The raw data as the following:
-1_CCRENANXX_ATCACG_L008_R1.fastq.gz
-2_CCRENANXX_CGATGT_L008_R1.fastq.gz
-3_CCRENANXX_TTAGGC_L008_R1.fastq.gz
-4_CCRENANXX_TGACCA_L008_R1.fastq.gz
-5_CCRENANXX_ACAGTG_L008_R1.fastq.gz
-6_CCRENANXX_GCCAAT_L008_R1.fastq.gz
-7_CCRENANXX_CAGATC_L008_R1.fastq.gz
+1_CCRENANXX_ATCACG_L008_R1.fastq.gz 
+2_CCRENANXX_CGATGT_L008_R1.fastq.gz 
+3_CCRENANXX_TTAGGC_L008_R1.fastq.gz 
+4_CCRENANXX_TGACCA_L008_R1.fastq.gz 
+5_CCRENANXX_ACAGTG_L008_R1.fastq.gz 
+6_CCRENANXX_GCCAAT_L008_R1.fastq.gz 
+7_CCRENANXX_CAGATC_L008_R1.fastq.gz 
 8_CCRENANXX_ACTTGA_L008_R1.fastq.gz 
 
 Based on the previous report (Ragupathy et al., 2016, Deep sequencing of wheat sRNA transcriptome reveals distinct temporal expression pattern of miRNAs in response to heat, light 

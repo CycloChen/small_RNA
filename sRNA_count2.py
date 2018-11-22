@@ -4,7 +4,8 @@ import csv
 import sys
 import argparse
     
-	#Find the length distribution of sRNA in fastq.gz file
+#Find the length distribution of sRNA in fastq.gz file
+#dataframe-->dict(string, float)
 def counting(file):
 	sRNA_count={}
 	with open(file) as f:

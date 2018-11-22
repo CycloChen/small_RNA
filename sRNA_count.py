@@ -4,7 +4,9 @@ import csv
 import sys
 import argparse
 from collections import OrderedDict
-    
+
+#from .sam file to dict
+#dataframe --> string, float    
 def nor_redunt(file):
     
 	sRNA_dic={}
@@ -26,13 +28,13 @@ def nor_redunt(file):
             
 	return(sRNA_dic)
 
-		#Save for sRNA distribution analysis
+#Save for sRNA distribution analysis
 def save_dic(dict):
 	w = csv.writer(open("output.csv", "w"))
 	for key, val in dict.items():
 		w.writerow([key.strip(), val])
 
-		#Save for further alignment, can filter the size by len(key.strip() and the reads by the val
+#Save to fasta file for further alignment, can filter the size by len(key.strip() and the reads by the val
 def save_dic1(dict):
 	with open("1_output3.fasta", "w") as f:
 		i=1

@@ -19,7 +19,7 @@ def cluster1(m, file):
 				a=int(i[3]) #Position in float
 				b=int(i[0].split('_')[1]) #Reads in float
 				c=i[2] #Which chromosome
-				if c+'_' + str(a//m) in cluster: #Here cluster by 1000bp, it can be change to any length. It can be changed to any length.
+				if c+'_' + str(a//m) in cluster: #Here cluster by m bp. 
 					cluster[c+'_' + str(a//m)]+=b
 				else:
 					cluster[c+'_' + str(a//m)]=b
@@ -40,7 +40,7 @@ def cluster2(m,file):
 				a=int(i[3])
 				b=int(i[0].split('_')[1])
 				c=i[2]
-				if c+'_' + str((a+1/2*m)//m) in cluster: #over-lap 500 bp with the fisrt one. If change, over-lapping half of the full length.
+				if c+'_' + str((a+1/2*m)//m) in cluster: #over-lap half m  bp with the fisrt one. 
 					cluster[c+'_' + str((a+1/2*m)//m)]+=b
 				else:
 					cluster[c+'_' + str((a+1/2*m)//m)]=b
